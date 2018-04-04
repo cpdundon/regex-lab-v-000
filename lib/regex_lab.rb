@@ -3,8 +3,26 @@ def starts_with_a_vowel?(word)
   rtn = !!rtn
 end
 
+
+=begin
 def words_starting_with_un_and_ending_with_ing(text)
   txt_arr = text.split(" ")
+  r_arr = []
+  txt_arr.each do |e|
+    if e.slice(0,2).match(/[Un, un]/) && e.slice(e.length - 2, 3).match(/[ing]/)
+      r_arr << e
+    end
+  end
+
+  r_arr
+end
+=end
+
+def words_starting_with_un_and_ending_with_ing(text)
+  txt_arr = text.split(" ")
+  
+  
+  
   r_arr = []
   txt_arr.each do |e|
     if e.slice(0,2).match(/[Un, un]/) && e.slice(e.length - 2, 3).match(/[ing]/)
