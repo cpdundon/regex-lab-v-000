@@ -20,7 +20,7 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   txt_arr = text.split(" ")
-  r = text.grep(/[un...ing]/)
+  r = txt_arr.grep(/[un...ing]/)
   
   return r
   
