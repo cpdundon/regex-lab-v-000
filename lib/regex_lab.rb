@@ -26,7 +26,7 @@ end
 
 def words_five_letters_long(text)
   ret = text.scan(/[a-zA-Z]+/)
-  ret = ret.grep(/^\w$/)
+  ret = ret.grep(/^\w{5}$/)
   puts text
   puts ret
   ret
