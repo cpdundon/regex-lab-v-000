@@ -20,10 +20,8 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   txt_arr = text.split(" ")
-  r = txt_arr.grep(/un[a-zA-Z]*ing/)
-  puts r
-  return r
-  
+  ret = txt_arr.grep(/un[a-zA-Z]*ing/)
+  ret
 end
 
 def words_five_letters_long(text)
