@@ -1,5 +1,5 @@
 def starts_with_a_vowel?(word)
-  rtn = word.slice(0, 1).match(/[a,e,i,o,u,A,E,I,O,U]/)
+  rtn = word.slice(0, 1).match(/[aeiouAEIOU]/)
   rtn = !!rtn
 end
 
