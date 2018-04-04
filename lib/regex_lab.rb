@@ -5,7 +5,8 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   rtn = text.scan(/\w/)
-  rtn = rtn.grep(/[un...ing]/)
+  puts rtn
+  rtn = rtn.grep(/[un][a-z*][ing]/)
   puts rtn
   rtn
 end
