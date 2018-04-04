@@ -32,7 +32,7 @@ end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
   ret = text.match(/[A-Z][a-z]+/)
-  ret = ret.match(/\W/)
+  ret = ret.grep(/\W/)
   !!ret
 end
 
