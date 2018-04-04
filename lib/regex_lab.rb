@@ -37,7 +37,7 @@ end
 
 def valid_phone_number?(phone)
   puts phone
-  ret = phone.match(/^\d{3}.*\d{3}.*\d{4}$/)
+  ret = phone.match(/^.*\d{3}.*\d{3}.*\d{4}$/)
   puts ret
   !!ret
 end
