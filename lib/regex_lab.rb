@@ -31,10 +31,7 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  len = text.length
   ret = text.match(/^[A-Z].*\W$/)
-  puts ret
-  ret = ret.grep(/\W/)
   !!ret
 end
 
