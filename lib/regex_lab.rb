@@ -23,19 +23,6 @@ def words_starting_with_un_and_ending_with_ing(text)
   
   return r
   
-  
-  txt_arr = text.split(" ")
-  
-  
-  
-  r_arr = []
-  txt_arr.each do |e|
-    if e.slice(0,2).match(/[Un, un]/) && e.slice(e.length - 2, 3).match(/[ing]/)
-      r_arr << e
-    end
-  end
-
-  r_arr
 end
 
 def words_five_letters_long(text)
