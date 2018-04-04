@@ -4,9 +4,11 @@ def starts_with_a_vowel?(word)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-  rtn = text.split(" ")
-  rtn.collect do |e|
+  txt_arr = text.split(" ")
+  txt_arr.each do |e|
     if e.slice(0,2).match(/[Un, un]/) && e.slice(e.length - 2, 3).match(/[ing]/)
+      r_arr << e
+    end
   end
   puts rtn
   rtn = rtn.grep(/un/)
